@@ -26,6 +26,6 @@ Route::get('/admin/dashboard', [AdminController::class, 'adminDashboard'])
     ->name('admin.dashboard')
     ->middleware(['auth', Role::class.':admin']);
 
-Route::get('agent/dashboard', [AgentController::class, 'agentDashboard'])
+Route::get('/agent/dashboard', [AgentController::class, 'agentDashboard'])
     ->name('agent.dashboard')
     ->middleware(['auth', Role::class.':agent']);
