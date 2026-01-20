@@ -1,0 +1,207 @@
+.todo-dashboard {
+    background-color: #f0fdf4;
+
+    min-height: 100vh;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-dashboard .todo-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.todo-dashboard .todo-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.todo-dashboard .todo-header h1 {
+    font-size: 42px;
+    color: #1a2e24;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.todo-dashboard .todo-header p {
+    color: #27ae60;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.todo-dashboard .todo-creator {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    margin-bottom: 50px;
+    border: 1px solid #e1e8e4;
+    box-shadow: 0 10px 30px rgba(39, 174, 96, 0.08);
+}
+
+.todo-dashboard .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-dashboard .input-group label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #5c727d;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.todo-dashboard input,
+.todo-dashboard select {
+    padding: 14px;
+    border: 2px solid #f1f8f5;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+    background: #fbfdfc;
+}
+
+.todo-dashboard input:focus,
+.todo-dashboard select:focus {
+    border-color: #27ae60;
+    background: #fff;
+}
+
+.todo-dashboard .main-add-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.todo-dashboard .main-add-btn:hover {
+    background-color: #1a2e24;
+    transform: translateY(-2px);
+}
+
+.todo-dashboard .table-wrapper {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #e1e8e4;
+}
+
+
+.todo-dashboard .ui.table {
+    border: none;
+    margin: 0;
+}
+
+.todo-dashboard .ui.table thead th {
+    background: #f8faf9 !important;
+    color: #1a2e24 !important;
+    padding: 20px !important;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.todo-dashboard .ui.table tbody td {
+    padding: 20px !important;
+    vertical-align: middle;
+}
+
+
+.todo-dashboard .todo-title-cell {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.todo-dashboard .task-done .todo-title-cell {
+    text-decoration: line-through;
+    color: #bdc3c7;
+}
+
+
+.todo-dashboard .priority-badge {
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.todo-dashboard .priority-badge.low {
+    background: #ebf7f0;
+    color: #27ae60;
+}
+
+.todo-dashboard .priority-badge.medium {
+    background: #fff4e6;
+    color: #f39c12;
+}
+
+.todo-dashboard .priority-badge.high {
+    background: #fff0f0;
+    color: #e74c3c;
+}
+
+
+.todo-dashboard .status-pill {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.todo-dashboard .status-pill.completed {
+    color: #27ae60;
+}
+
+.todo-dashboard .status-pill.pending {
+    color: #5c727d;
+}
+
+
+.todo-dashboard .actions-cell {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-dashboard .action-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.todo-dashboard .action-btn.complete {
+    background: #ebf7f0;
+    color: #27ae60;
+}
+
+.todo-dashboard .action-btn.edit {
+    background: #f1f5f9;
+    color: #34495e;
+}
+
+.todo-dashboard .action-btn.delete {
+    background: #fff0f0;
+    color: #e74c3c;
+}
+
+.todo-dashboard .action-btn:hover {
+    transform: scale(1.1);
+}
