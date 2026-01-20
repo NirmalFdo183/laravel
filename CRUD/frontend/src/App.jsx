@@ -1,14 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from "../src/api/axios"
 
 const App = () => {
+  const [todos,setTodos] = useState([]);
+  const [title,setTitle] = useState("");
+
+  useEffect(()=>{
+    fetchTodos();
+  },[]);
+
+  const fetchTodos = async ()=> {
+    const res = await axios.get("/todos");
+    setTodos(res.data);
+  }
+
+
+
   return (
-    <div>
-      <div className='ui fixed inverted menu'>
-        <div className='ui container'>
-          <a href="/#" className='header item'>React Js CRUD laravel API</a>
-        </div>
-      </div>
-    </div>
+    <>
+      <ul>
+        {todos.map((todo,index)=>{
+          return <li key={index}>{todo.title}</li>
+        })}
+      </ul>
+    </>  
   )
 }
 

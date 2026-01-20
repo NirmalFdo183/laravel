@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title')->nullable(false);
             $table->enum('priority',['low','medium','high'])->default('medium')->nullable(false);
-            $table->boolean('competed')->default(false)->nullable(false);
+            $table->boolean('completed')->default(false)->nullable(false);
             $table->timestamps();
         });
     }
