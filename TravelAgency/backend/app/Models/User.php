@@ -21,6 +21,12 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
+        'address',
+        'phone',
+        'avatar',
+        'city',
+        'is_verified',
     ];
 
     /**
@@ -44,5 +50,13 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function isGuide(){
+        return $this->role === 'guide';
+    }
+
+    public function isTourist(){
+        return $this->role === 'tourist';
     }
 }
