@@ -1,0 +1,41 @@
+# =========================
+# Laravel (backend)
+# =========================
+backend/vendor/
+backend/node_modules/
+backend/public/storage/
+backend/storage/*.key
+backend/storage/framework/
+backend/storage/logs/
+backend/storage/app/public/
+backend/.env
+backend/.env.*
+backend/bootstrap/cache/
+
+# Laravel IDE helpers
+backend/.phpstorm.meta.php
+backend/.idea/
+
+# =========================
+# React (frontend)
+# =========================
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+frontend/.parcel-cache/
+frontend/.vite/
+
+# =========================
+# General
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+
+# Editor configs
+.vscode/
+.idea/
