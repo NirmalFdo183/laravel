@@ -40,7 +40,7 @@ class AuthController extends Controller
             if($user->role == 'admin'){
                 return redirect()->route('admin.dashboard')->with('msg','admin');
             }
-            return redirect()->route('user.dashboard');
+            return redirect()->route('register.form');
         }
     }
 
