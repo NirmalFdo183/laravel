@@ -30,5 +30,6 @@ Route::middleware('auth')->group(function () {
         Route::delete('/admin/dashboard/food/{id}',[FoodController::class,'deleteFoodItem'])->name('deleteFoodItem');
         Route::put('/admin/dashboard/food/{id}',[FoodController::class,'editFoodItem'])->name('editFoodItem');
         Route::get('/admin/dashboard/food/{food}',[FoodController::class,'editFoodItemPage'])->name('editFoodItemPage');
+        Route::delete('/admin/dashboard/user/{id}',[UserController::class,'deleteUser'])->name('deleteUser');
     });
 });
