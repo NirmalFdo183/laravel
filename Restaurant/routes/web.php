@@ -22,6 +22,7 @@ Route::middleware('auth')->group(function () {
 
     Route::middleware('role:user')->group(function () {
         Route::get('/user/dashboard', [UserDashboardController::class, 'index'])->name('user.dashboard');
+        Route::put('/user/dashboard/edit',[UserController::class,'editUser'])->name('editUser');
     });
 
     Route::middleware('role:admin')->group(function () {
